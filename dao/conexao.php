@@ -10,7 +10,7 @@ class conexao
         $this->host = "localhost";
         $this->user = "root";
         $this->pass = "";
-        $this->dba = "db_mygame";
+        $this->dba = "db_god_of_war";
         self::connect();
         //echo "Conectado com sucessu!!!!!";
     }

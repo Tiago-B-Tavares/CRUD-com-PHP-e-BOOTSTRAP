@@ -113,7 +113,7 @@ class manipuladados extends conexao
 
     public function validarLogin($login, $senha)
     {
-        $this->sql = "SELECT * FROM $this->table WHERE nome='$login' and senha='$senha'";
+        $this->sql = "SELECT * FROM $this->table WHERE usuario='$login' and senha='$senha'";
         $this->qr = self::execSQL($this->sql);
         $linhas = @mysqli_num_rows($this->qr);
         return $linhas;

@@ -15,15 +15,15 @@ if (move_uploaded_file($_FILES['arquivo']['tmp_name'], $caminho_completo)) {
     echo "Erro ao enviar imagem.";
 }
 
-$nomecurso = $_POST["txtNome"];
+$nomePersonagem = $_POST["txtNome"];
 $descricao = $_POST["txtDesc"];
-$duracao = $_POST["txtDuracao"];
+
 
 
 $manipula = new manipuladados();
-$manipula->setTable("tb_personagen");
-$manipula->setFields("nome,descricao,duracao,url");
-$manipula->setDados("'$nomecurso','$descricao','$duracao', '$caminho_completo'");
+$manipula->setTable("tb_personagens");
+$manipula->setFields("nome,descricao,url");
+$manipula->setDados("'$nomePersonagem','$descricao', '$caminho_completo'");
 $manipula->insert();
 echo $manipula->getStatus();
 $status = $manipula->getStatus();

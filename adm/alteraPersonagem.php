@@ -4,7 +4,7 @@ include_once("../dao/manipuladados.php");
 $id = $_POST["id"];
 $nomecurso = $_POST["txtNome"];
 $descricao = $_POST["txtDesc"];
-$duracao = $_POST["txtDuracao"];
+
 
 $diretorio = "adm/uploadImg";
 
@@ -24,17 +24,17 @@ if (isset($_FILES['arquivo'])) {
     
 /*  */
     $manipula = new manipuladados();
-    $manipula->setTable("tb_personagen");
+    $manipula->setTable("tb_personagens");
     $manipula->setFieldId('id');
-    $manipula->setFields("nome='$nomecurso', descricao='$descricao', duracao='$duracao', url='$caminho_completo'");
+    $manipula->setFields("nome='$nomecurso', descricao='$descricao', url='$caminho_completo'");
     $manipula->setValueId($id);
 
     $manipula->update();
 } else {
     $manipula = new manipuladados();
-    $manipula->setTable("tb_personagen");
+    $manipula->setTable("tb_personagens");
     $manipula->setFieldId('id');
-    $manipula->setFields("nome='$nomecurso', descricao='$descricao', duracao='$duracao'");
+    $manipula->setFields("nome='$nomecurso', descricao='$descricao'");
     $manipula->setValueId($id);
 
     $manipula->update();

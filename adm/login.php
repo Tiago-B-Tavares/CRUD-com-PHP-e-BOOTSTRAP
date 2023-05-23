@@ -6,7 +6,7 @@
 	
 	$login = $_POST['txtNome'];
     $password = $_POST['txtSenha'];
-	$manipula->setTable("tb_users");
+	$manipula->setTable("user_admin");
 	$linhas = $manipula->validarLogin($login,$password); 
        
 	if($linhas == 0){

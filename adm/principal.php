@@ -4,7 +4,7 @@ include_once("validarcookie.php");
 include_once("../dao/manipuladados.php");
 
 $busca = new manipuladados();
-$busca->setTable("tb_personagen");
+$busca->setTable("tb_personagens");
 $personagens = $busca->getAllDataTable();
 
 ?>

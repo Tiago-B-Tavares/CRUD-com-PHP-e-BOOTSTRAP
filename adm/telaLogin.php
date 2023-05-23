@@ -1,15 +1,19 @@
 <html>
-    <head>
-    <meta charset='utf-8'/>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
-    <title>Tela de Login</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/bootstrap.css'>
-    <link rel='stylesheet' type='text/css' meida='screen' href='../css/estilo.css'/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <script src='../js/bootstrap.bundle.js'></script>
-    </head>
-    <body><div class="container">
+
+<head>
+  <meta charset='utf-8' />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <title>Tela de Login</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../css/bootstrap.css'>
+  <link rel='stylesheet' type='text/css' meida='screen' href='../css/estilo.css' />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src='../js/bootstrap.bundle.js'></script>
+</head>
+
+<body class="bg-dark">
+  <nav class="container text-center text-light"><a href="?secao=home">Voltar ao início</a></nav>
+  <div class="container ">
     <div class="row">
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card border-0 shadow rounded-3 my-5">
@@ -18,11 +22,11 @@
             <form method="post" action="login.php">
               <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="txtNome" name="txtNome" placeholder="Digite seu nome">
-                <label for="tNome">Nome usuário</label>
+                <label for="tNome">Usuário</label>
               </div>
               <div class="form-floating mb-3">
                 <input type="password" class="form-control" id="txtSenha" name="txtSenha" placeholder="Digite sua senha">
-                <label for="tSenha">Senha do Usuário</label>
+                <label for="tSenha">Senha</label>
               </div>
 
               <div class="form-check mb-3">
@@ -32,10 +36,10 @@
                 </label>
               </div>
               <div class="d-grid">
-                <input class="btn btn-primary btn-login text-uppercase fw-bold" type="submit" value="Entrar"/>
+                <input class="btn btn-primary btn-login text-uppercase fw-bold" type="submit" value="Entrar" />
               </div>
               <div class="d-grid py-2">
-                <input class="btn btn-secondary btn-login text-uppercase fw-bold" type="reset" value="Limpar"/>
+                <input class="btn btn-secondary btn-login text-uppercase fw-bold" type="reset" value="Limpar" />
               </div>
               <hr class="my-4">
               <div class="d-grid mb-2">
@@ -54,7 +58,8 @@
       </div>
     </div>
   </div>
-    </body>
+</body>
+
 </html>
 <?php
 ?>

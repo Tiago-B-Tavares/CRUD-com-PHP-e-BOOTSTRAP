@@ -11,7 +11,7 @@
 	if (!(empty($nome_usuario) or empty($senha_usuario)))
 	{
 		
-		$manipula->setTable('tb_users');
+		$manipula->setTable('user_admin');
 		$linhas = $manipula->validarLogin($nome_usuario,$senha_usuario);
 
                 if($linhas == 0)

@@ -21,7 +21,7 @@
         <a class="nav-link " href="?secao=personagens">Personagens</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link " href="?secao=adminisrativo">Administrador</a>
+        <a class="nav-link " href="adm/telaLogin.php">Administrador</a>
       </li>
     </ul>
   </div>
