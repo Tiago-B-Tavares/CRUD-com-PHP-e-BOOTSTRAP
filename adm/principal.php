@@ -38,7 +38,6 @@ $personagens = $busca->getAllDataTable();
 					<th>ID</th>
 					<th>Nome</th>
 					<th>Descrição</th>
-					<th>Duração</th>
 					<th>URL</th>
 					<th>Alterar</th>
 					<th>Excluir</th>
@@ -57,15 +56,13 @@ $personagens = $busca->getAllDataTable();
 							<td>
 								<?= $persona['descricao']; ?>
 							</td>
-							<td>
-								<?= $persona['duracao']; ?>
-							</td>
+						
 							<td>
 								<?= $persona['url']; ?>
 							</td>
 							<td>
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2"
-									onclick="passaModal(<?= $persona['id']; ?>,'<?= $persona['nome']; ?>','<?= $persona['descricao']; ?>','<?= $persona['duracao']; ?>','<?= $persona['url']; ?>')">
+									onclick="passaModal(<?= $persona['id']; ?>,'<?= $persona['nome']; ?>','<?= $persona['descricao']; ?>','<?= $persona['url']; ?>')">
 									<i class="bi bi-pencil"></i> Alterar
 								</button>
 								<div class="modal fade" id="modal2" tabindex="-1" role="dialog"
@@ -100,11 +97,7 @@ $personagens = $busca->getAllDataTable();
 														<textarea class="form-control" id="descricao2"
 															name="txtDesc"></textarea>
 													</div>
-													<div class="form-group">
-														<label for="duracao2">Duração:</label>
-														<input type="text" class="form-control" id="duracao2"
-															name="txtDuracao">
-													</div>
+													
 													<div class="modal-footer">
 														<button type="button" class="btn btn-secondary"
 															data-dismiss="modal">Fechar</button>
@@ -176,7 +169,7 @@ $personagens = $busca->getAllDataTable();
 						</div>
 						<div class="modal-body">
 							<div class="form-group">
-								<form action="../adm/cadcursos.php" method="post" enctype="multipart/form-data">
+								<form action="../adm/cadPersonagem.php" method="post" enctype="multipart/form-data">
 									<label for="">Imagem:</label>
 									<input type="file" name="arquivo" id="arquivo" accept="image/*">
 
