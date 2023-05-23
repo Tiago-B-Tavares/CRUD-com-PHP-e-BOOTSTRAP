@@ -1,0 +1,222 @@
+@font-face {
+  font-family: 'Berserker-Regular';
+  src: url('../src/fonts/Berserker-Regular.otf') format('OpenType');
+
+}
+@font-face {
+  font-family: 'Open sans';
+  src: url('../src/fonts/OpenSans-Bold.ttf') format('OpenType');
+
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+html,
+body {
+  
+  margin: 0;
+  padding: 0;
+ 
+}
+
+
+
+
+:root {
+  --font-nordica: 'Berserker-Regular';
+  --titulos: 36px;
+  --subtitulos: 24px;
+  --paragrafos: 16px;
+
+
+  --Preto: #000000;
+  --Cinza-escuro: #1f1f1f;
+  --Cinza-médio: #2B2B2B;
+  --Cinza-claro: #3A3A3A;
+  --Azul-titulo: #066ff0;
+
+}
+
+
+header {
+ 
+  background-color: var(--Preto);
+}
+
+.navbar-custom {
+  background-color: #000 !important;
+  color: #fff;
+}
+
+
+.nav-link {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  font-family: var(--font-nordica);
+  margin: 15px !important;
+}
+
+
+.nav-link:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  background-color: #fff;
+  height: 2px;
+  transition: right 0.2s ease-out;
+}
+
+.nav-link:hover:before {
+  right: 0;
+}
+
+/* home */
+.secao-1 {
+  background-color: #000;
+  padding: 0;
+  margin: 0;
+}
+
+.background {
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-image: url('../src/img/imgl.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*  background-attachment: fixed; */
+  width: 100%;
+}
+
+.secao-1-article {
+
+ 
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.secao-1-article-title {
+  font-size: 58pt;
+ 
+  font-family: 'Berserker-Regular';
+  font-weight: 700;
+  color: #f0f0f0;
+  margin-top: 50px;
+}
+
+.secao-1-article-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.secao-1-article span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  color: #f0f0f0;
+  width: 300px;
+  height: 40px;
+  font-size: 10px;
+  margin-top: 30px;
+}
+
+.secao-1-article span img {
+  margin: 10px 5px 0px 0px;
+  width: 40px;
+  height: 40px;
+}
+
+h6 {
+  color: #fff;
+}
+
+.video {
+  border: #066ff0 solid 3px;
+}
+
+.secao-2-article {
+  background-color: #000 !important;
+  
+  height: 150px;
+  
+}
+.secao-2-article-componentes{
+background-color: #000 !important;
+
+}
+
+figure.col-2 {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+ 
+
+}
+figure.col-2 img {
+ width: 20px;
+ height: 20px;
+}
+figure.col-2 span {
+  font-size: 12px;
+  font-family: 'Open sans' ;
+  margin: 5px;
+  
+ 
+}
+.secao-3 {
+ 
+  background-image: url('../src/img/Sem Título-443.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+   
+  height: auto;
+  
+
+}
+
+.secao-3-article{
+  
+  margin-left: 100px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width:400px;
+  color: white;
+}
+
+
+
+.forms{
+  border: 3px solid #f1f1f1 ;
+  padding: 10px;
+  margin-top:10px;
+}
+#formCadastrar{
+  display: none;
+}
+#formDeletar{
+  display: none;
+}
+#formAlterar{
+  display: none;
+}
+
+footer.container-fluid{
+  margin: 0;
+  padding: 0;
+}
+
