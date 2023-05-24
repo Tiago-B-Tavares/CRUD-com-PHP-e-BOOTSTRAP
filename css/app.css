@@ -3,18 +3,21 @@
   src: url('../src/fonts/Berserker-Regular.otf') format('OpenType');
 
 }
+
 @font-face {
   font-family: 'Open sans';
   src: url('../src/fonts/OpenSans-Bold.ttf') format('OpenType');
 
 }
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 html,
 body {
-  
+
   margin: 0;
   padding: 0;
- 
+
 }
 
 
@@ -37,7 +40,7 @@ body {
 
 
 header {
- 
+
   background-color: var(--Preto);
 }
 
@@ -79,21 +82,20 @@ header {
 }
 
 .background {
-margin-top: 100px;
+  margin-top: 100px;
   margin: 0;
-  padding: 0;
+  padding-top: 200px;
   width: 100%;
   background-image: url('../src/img/imgl.png');
   background-size: cover;
   background-repeat: no-repeat;
-
-   background-attachment: fixed; 
+  background-attachment: fixed;
   width: 100%;
 }
 
 .secao-1-article {
 
- 
+
   justify-content: center;
   align-items: center;
   height: 600px;
@@ -101,13 +103,32 @@ margin-top: 100px;
 
 .secao-title {
   font-size: 124px;
-  letter-spacing:1pt;
+  letter-spacing: 1pt;
   font-family: 'Berserker-Regular';
   font-weight: 700;
   color: #f0f0f0;
   margin-top: 50px;
 }
+.thumbnail{
+  padding-top: 25px;
+}
+.faixa-etaria{
+  padding-top: 50px;
+}
+.info-geral{
+  height: auto;
+  background-color: #000;
+  padding: 30px 0;
+}
+.info{
 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 12px;
+ flex-direction: column;
+ margin: 10px 0px;
+}
 .secao-1-article-video {
   display: flex;
   justify-content: center;
@@ -143,12 +164,13 @@ h6 {
 
 .secao-2-article {
   background-color: #000 !important;
-  
+
   height: 150px;
-  
+
 }
-.secao-2-article-componentes{
-background-color: #000 !important;
+
+.secao-2-article-componentes {
+  background-color: #000 !important;
 
 }
 
@@ -159,34 +181,37 @@ figure.col-2 {
   align-items: center;
   flex-direction: column;
   color: white;
- 
+
 
 }
+
 figure.col-2 img {
- width: 20px;
- height: 20px;
+  width: 20px;
+  height: 20px;
 }
+
 figure.col-2 span {
   font-size: 12px;
-  font-family: 'Open sans' ;
+  font-family: 'Open sans';
   margin: 5px;
-  
- 
+
+
 }
+
 .secao-3 {
- 
+
   background-image: url('../src/img/Sem Título-443.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-   
+
   height: auto;
-  
+
 
 }
 
-.secao-3-article{
-  
+.secao-3-article {
+
   margin-left: 100px;
   padding-bottom: 50px;
   padding-top: 50px;
@@ -194,16 +219,16 @@ figure.col-2 span {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  width:400px;
+  width: 400px;
   color: white;
 }
 
 
-.card{
+.card {
   max-width: 90%;
   background-color: #000 !important;
 }
-.figure-img-personagem{
+
+.figure-img-personagem {
   background-color: #000 !important;
 }
-
