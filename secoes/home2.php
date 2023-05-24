@@ -45,13 +45,20 @@
     </figure>
 
 </section>
-<section class="row">
-    <article class="col-6 text-light">
-        <span>Sony Interactive Entertainment</span>
-        <h2>Embarque com Kratos e Atreus em uma jornada épica</h2>
-        O Fimbulwinter já começou. Kratos e Atreus devem viajar pelos Nove Reinos em busca de respostas enquanto as forças asgardianas se preparam para uma batalha profetizada que causará o fim do mundo. Nessa jornada, eles explorarão paisagens míticas impressionantes e enfrentarão inimigos aterradores: deuses nórdicos e monstros. A ameaça do Ragnarök se aproxima. Kratos e Atreus terão de escolher entre a segurança deles próprios e a dos reinos.
+<section class="row p-5">
+    <article class="col-md-5  py-4 text-light">
+      
+        <h2 class="w-50  py-3  fs-1 subtitulo">
+            Embarque com Kratos e Atreus em uma jornada épica</h2>
+
+       <p class="fs-4"> O Fimbulwinter já começou. Kratos e Atreus devem viajar pelos Nove Reinos em busca de respostas enquanto as forças asgardianas se preparam para uma batalha profetizada que causará o fim do mundo. Nessa jornada, eles explorarão paisagens míticas impressionantes e enfrentarão inimigos aterradores: deuses nórdicos e monstros. A ameaça do Ragnarök se aproxima. Kratos e Atreus terão de escolher entre a segurança deles próprios e a dos reinos.
+    </p>
+    <div class="row">
+        <img src="src/img/logo-sta-monica-sony.png" class="col-6 mw-25" alt="">
+    <span class="col-6">Do Santa Monica Studio, esta é a sequência da aclamada versão de 2018 de God of War.</span>
+    </div>
     </article>
-    <figure class="col-6">
+    <figure class="col-md-6 ms-4">
         <img src="src/img/kratos-atreus.png" alt="">
     </figure>
 </section>
