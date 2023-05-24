@@ -11,9 +11,17 @@ $con = new conexao();
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>God Of War</title>
+  <link rel="shortcut icon" href="src/img/peakpx.jpg" type="image/x-icon">
+
+  <!-- Bootstrap -->
+
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
+
+  <!-- Animate -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
@@ -38,8 +46,8 @@ $con = new conexao();
   </main>
 
 
-  <footer class="container-fluid bg-dark" >
-  <?php include("includes/rodape.php") ?>
+  <footer class="container-fluid bg-dark">
+    <?php include("includes/rodape.php") ?>
   </footer>
 
 

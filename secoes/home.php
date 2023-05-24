@@ -3,14 +3,15 @@
     <div class="container ">
         <article class="secao-1-article  row">
 
-            <div class="col-6">
+            <div class="col-sm-12 col-md-6 ">
                 <h1 class="secao-1-article-title text-wrap ">God of War Ragnarök</h1>
                 <h6>Os maiores heróis dos 9 reinos, lutando por um futuro em que acreditam</h6>
-                <button>btn1</button>
-                <button>btn2</button>
+                <figure class="py-5">
+                    <img src="src/img/logo-sta-monica-sony.png" alt="">
+                </figure>
 
             </div>
-            <figure class="secao-1-article-video col-6">
+            <figure class="secao-1-article-video col-sm-12 col-md-6 ">
                 <iframe class="video" width="300" height="200"
                     src="https://www.youtube.com/embed/x6oF3Jxu7X0?controls=0&amp;start=23" title="YouTube video player"
                     frameborder="0"
@@ -51,9 +52,6 @@
             <span class=" ">Compatível com a ajuda do jogo</span>
         </figure>
     </div>
-
-
-
 </section>
 <section class="secao-3 container-fluid ">
     <article class="secao-3-article">
@@ -70,5 +68,17 @@
             Do Santa Mônica Studio, esta é a sequência da aclamada versão de 2018 de God of War
         </span>
     </article>
+
+</section>
+<section class="secao-4 container-fluid row py-5">
+    
+    <div class="col-sm-12 col-md-6 col-lg-6 text-light ">
+        <h2>Toda grande aventura é uma história esperando para ser contada</h2>
+        <p>Reviva o começo da jornada nórdica épica de Kratos e Atreus em Mitos de Midgard. Um alerta para quem não está
+            familiarizado com God of War: spoilers à frente</p>
+    </div>
+    <figure class="col-sm-12 col-md-6 col-lg-6">
+        <img src="src/img/axel.png" alt="">
+    </figure>
 
 </section>

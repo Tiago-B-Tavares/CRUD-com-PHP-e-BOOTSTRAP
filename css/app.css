@@ -79,15 +79,15 @@ header {
 }
 
 .background {
-
+margin-top: 100px;
   margin: 0;
   padding: 0;
   width: 100%;
   background-image: url('../src/img/imgl.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  /*  background-attachment: fixed; */
+
+   background-attachment: fixed; 
   width: 100%;
 }
 
@@ -99,9 +99,9 @@ header {
   height: 600px;
 }
 
-.secao-1-article-title {
-  font-size: 58pt;
- 
+.secao-title {
+  font-size: 124px;
+  letter-spacing:1pt;
   font-family: 'Berserker-Regular';
   font-weight: 700;
   color: #f0f0f0;
@@ -206,3 +206,4 @@ figure.col-2 span {
 .figure-img-personagem{
   background-color: #000 !important;
 }
+

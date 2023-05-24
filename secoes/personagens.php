@@ -17,10 +17,10 @@ foreach ($personagens as $persona) {
   <section class=" py-3">
     <div class="container-fluid card mb-3" >
       <div class="row g-0">
-        <figure class="col-md-4 figure-img-personagem w-75">
-          <img src="<?= $persona['url']; ?>" class=" rounded-start img-personagem w-50" alt="...">
+        <figure class="col-sm-12 col-md-6 col-lg-6 figure-img-personagem w-auto py-3  ">
+          <img src="<?= $persona['url']; ?>" class=" rounded-start img-personagem " alt="...">
         </figure>
-        <div class="col-md-8">
+        <div class="col-sm-12 col-md-6 col-lg-6">
           <div class="card-body text-light">
             <h5 class="card-title"><?= $persona['nome']; ?></h5>
             <p class="card-text"><?= $persona['descricao']; ?></p>
