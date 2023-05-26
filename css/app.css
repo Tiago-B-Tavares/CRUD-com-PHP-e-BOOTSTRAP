@@ -15,8 +15,8 @@
 html,
 body {
 
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 
 }
 
@@ -62,8 +62,8 @@ header {
 .nav-link:before {
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 0px;
+  left: 0px;
   right: 100%;
   background-color: #fff;
   height: 2px;
@@ -71,30 +71,38 @@ header {
 }
 
 .nav-link:hover:before {
-  right: 0;
+  right: 0px;
 }
 
 /* home */
-.secao-1 {
-  background-color: #000;
-  padding: 0;
-  margin: 0;
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
-.background {
+.fist-section {
   margin-top: 100px;
-  margin: 0;
+  margin: 0px;
   padding-top: 200px;
   width: 100%;
-  background-image: url('../src/img/imgl.png');
+  background-image: url('../src/img/bg-hero.jpg');
+}
+.second-section{
+  background-image: url("../src/img/bg-story.png");
+}
+.third-section{
+  background: url("../src/img/section5a-carousel-background.webp") ;
+
+}
+
+.fist-section, .second-section , .third-section{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  width: 100%;
 }
 
-
-.secao-title {
+article h1 {
   font-size: 124px;
   letter-spacing: 1pt;
   font-family: 'Berserker-Regular';
@@ -110,15 +118,30 @@ header {
 }
 .info-geral{
   height: auto;
-  background-color: #000;
-  padding: 30px 0;
+  background-color: #000 !important;
+  padding: 30px 0px;
 }
 .info{
-
+ 
  display: flex;
  justify-content: center;
  align-items: center;
  font-size: 12px;
  flex-direction: column;
  margin: 10px 0px;
+}
+
+.studio-img{
+  margin-top: 10px;
+  max-width:130px;
+  max-height:60px;
+}
+/* Cor do thumb (parte móvel da barra de rolagem) */
+::-webkit-scrollbar-thumb {
+  background-color: #066ff0;
+}
+
+/* Cor do track (parte fixa da barra de rolagem) */
+::-webkit-scrollbar-track {
+  background-color: #eaeaea;
 }

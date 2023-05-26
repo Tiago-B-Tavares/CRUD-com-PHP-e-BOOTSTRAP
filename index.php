@@ -35,7 +35,7 @@ $con = new conexao();
   </header>
 
 
-  <main class="main bg-dark">
+  <main class="main  ">
 
 
     <?php

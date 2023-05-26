@@ -1,10 +1,10 @@
-<section class="container-fluid row d-flex justify-content-center flex-row background">
+<section class="container-fluid row d-flex justify-content-center flex-row fist-section">
     <article class="col-sm-12 col-md-8  text-light">
-        <h1 class="secao-title text-left ps-5 ">God of War RagnaröK</h1>
-        <p class="w-50  p-4  fs-3 legenda">
+        <h1 class="title text-left ps-5 ">God of War RagnaröK</h1>
+        <span class="w-50     legenda">
             Os maiores heróis dos nove reinos, lutando por um futuro em que
             acreditam
-        </p>
+        </span>
     </article>
     <article class="col-sm-12 col-md-4  text-light py-5  d-flex  flex-column">
         <span>Confira o trailer</span>
@@ -20,11 +20,11 @@
 </section>
 <section class="info-geral container-fluid row d-flex justify-content-center flex-row m-0 text-light">
     <figure class="col-sm-6 col-md-2 info ">
-        <img src="src/img/icon-game-offline.png" alt="">
+        <img src="src/img/icon-game-offline.png" alt="game offline">
         <span>Jogo offline habilitado</span>
     </figure>
     <figure class="col-sm-6 col-md-2 info ">
-        <img src="src/img/icon-singleplayer.png" alt="">
+        <img src="src/img/icon-singleplayer.png" alt="Single player">
         <span>1 Jogador </span>
     </figure>
     <figure class="col-sm-6 col-md-2 info ">
@@ -45,20 +45,28 @@
     </figure>
 
 </section>
-<section class="row p-5">
-    <article class="col-md-5  py-4 text-light">
-      
-        <h2 class="w-50  py-3  fs-1 subtitulo">
+<section class="row p-5 second-section">
+    <article class="col-md-5  py-4 text-light ">
+
+        <h2 class="w-50  py-3    subtitulo">
             Embarque com Kratos e Atreus em uma jornada épica</h2>
 
-       <p class="fs-4"> O Fimbulwinter já começou. Kratos e Atreus devem viajar pelos Nove Reinos em busca de respostas enquanto as forças asgardianas se preparam para uma batalha profetizada que causará o fim do mundo. Nessa jornada, eles explorarão paisagens míticas impressionantes e enfrentarão inimigos aterradores: deuses nórdicos e monstros. A ameaça do Ragnarök se aproxima. Kratos e Atreus terão de escolher entre a segurança deles próprios e a dos reinos.
-    </p>
-    <div class="row">
-        <img src="src/img/logo-sta-monica-sony.png" class="col-6 mw-25" alt="">
-    <span class="col-6">Do Santa Monica Studio, esta é a sequência da aclamada versão de 2018 de God of War.</span>
-    </div>
+        <p class=" "> O Fimbulwinter já começou. Kratos e Atreus devem viajar pelos Nove Reinos em busca de respostas
+            enquanto as forças asgardianas se preparam para uma batalha profetizada que causará o fim do mundo. Nessa
+            jornada, eles explorarão paisagens míticas impressionantes e enfrentarão inimigos aterradores: deuses
+            nórdicos e monstros. A ameaça do Ragnarök se aproxima. Kratos e Atreus terão de escolher entre a segurança
+            deles próprios e a dos reinos.
+        </p>
+        <div class="row studio-legenda mt-4">
+            <img src="src/img/logo-sta-monica-sony.png" class="col-6 mw-25 studio-img" alt="">
+            <span class="col-6">Do Santa Monica Studio, esta é a sequência da aclamada versão de 2018 de God of
+                War.</span>
+        </div>
     </article>
     <figure class="col-md-6 ms-4">
         <img src="src/img/kratos-atreus.png" alt="">
     </figure>
+</section>
+<section class="third-section">
+
 </section>
