@@ -46,7 +46,7 @@ header {
 }
 
 .navbar-custom {
-  background-color: #000 !important;
+  background-color: #000 ;
   color: #fff;
 }
 
@@ -109,7 +109,7 @@ h2{
   padding:0px 50px;
 }
 
-.fist-section, .second-section {
+.fist-section {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -118,7 +118,7 @@ h2{
 .titulo-secao{
   
 }
-article h1 {
+article >  h1 {
   font-size: 100px;
   letter-spacing: 1pt;
   font-family: 'Berserker-Regular';
@@ -134,6 +134,7 @@ article h1 {
 }
 .info-geral{
   height: auto;
+  padding: 10px 0px;
   background-color: #000 !important;
   
 }

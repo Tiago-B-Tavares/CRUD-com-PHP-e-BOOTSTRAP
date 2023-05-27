@@ -56,7 +56,7 @@
     <div class="container">
         <div class="row">
             <article class="col-md-6 text-light">
-                <h2 class=" py-3 titulo-secao">Embarque com Kratos e Atreus em uma jornada épica</h2>
+                <h2 class="animate__animated animate__bounce  py-3 titulo-secao">Embarque com Kratos e Atreus em uma jornada épica</h2>
                 <p>
                     O Fimbulwinter já começou. Kratos e Atreus devem viajar pelos Nove Reinos em busca de respostas enquanto as forças asgardianas se preparam para uma batalha profetizada que causará o fim do mundo. Nessa jornada, eles explorarão paisagens míticas impressionantes e enfrentarão inimigos aterradores: deuses nórdicos e monstros. A ameaça do Ragnarök se aproxima. Kratos e Atreus terão de escolher entre a segurança deles próprios e a dos reinos.
                 </p>

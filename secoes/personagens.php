@@ -11,8 +11,6 @@ $personagens = $busca->getAllDataTable();
 foreach ($personagens as $persona) {
 
 ?>
-
-
   </div>
   <section class=" py-3">
     <div class="container-fluid card mb-3" >
@@ -21,17 +19,13 @@ foreach ($personagens as $persona) {
           <img src="<?= $persona['url']; ?>" class=" rounded-start img-personagem " alt="...">
         </figure>
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <div class="card-body text-light">
+          <div class="card-body text-dark">
             <h5 class="card-title"><?= $persona['nome']; ?></h5>
             <p class="card-text"><?= $persona['descricao']; ?></p>
           </div>
         </div>
       </div>
     </div>
-
-
-
-
 </section>
 <?php
           }

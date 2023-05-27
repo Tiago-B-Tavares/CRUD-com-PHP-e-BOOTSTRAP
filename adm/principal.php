@@ -46,7 +46,7 @@ $personagens = $busca->getAllDataTable();
 					<?php
 					foreach ($personagens as $persona) {
 						?>
-						<tr>
+						<tr class="text-light">
 							<td>
 								<?= $persona['id']; ?>
 							</td>
@@ -56,16 +56,17 @@ $personagens = $busca->getAllDataTable();
 							<td>
 								<?= $persona['descricao']; ?>
 							</td>
-						
+
 							<td>
 								<?= $persona['url']; ?>
 							</td>
 							<td>
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2"
-									onclick="passaModal(<?= $persona['id']; ?>,'<?= $persona['nome']; ?>','<?= $persona['descricao']; ?>','<?= $persona['url']; ?>')">
+									onclick="passaModalAlterar(<?= $persona['id']; ?>, '<?= $persona['nome']; ?>', '<?= $persona['descricao']; ?>', '<?= $persona['url']; ?>')">
 									<i class="bi bi-pencil"></i> Alterar
 								</button>
-								<div class="modal fade" id="modal2" tabindex="-1" role="dialog"
+
+								<div class="modal fade text-dark" id="modal2" tabindex="-1" role="dialog"
 									aria-labelledby="modal2Label" aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
@@ -97,7 +98,7 @@ $personagens = $busca->getAllDataTable();
 														<textarea class="form-control" id="descricao2"
 															name="txtDesc"></textarea>
 													</div>
-													
+
 													<div class="modal-footer">
 														<button type="button" class="btn btn-secondary"
 															data-dismiss="modal">Fechar</button>
@@ -112,16 +113,19 @@ $personagens = $busca->getAllDataTable();
 							</td>
 							<td>
 								<!-- Botão para abrir o terceiro modal -->
-								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3"
+									onclick="passaModalDeletar(<?php echo $persona['id']; ?>, '<?php echo $persona['nome']; ?>')">
 									<i class="bi bi-trash"></i> Deletar
 								</button>
+
 								<!-- Modal Deletar -->
-								<div class="modal fade" id="modal3" tabindex="-1" role="dialog"
+								<div class="modal fade text-dark" id="modal3" tabindex="-1" role="dialog"
 									aria-labelledby="modal3Label" aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h5 class="modal-title" id="modal3Label">REMOVER PERSONAGEM POR ID</h5>
+												<h5 class="modal-title" id="modal3Label">Tem certeza que deja remover esse
+													Personagem?</h5>
 												<button type="button" class="close" data-dismiss="modal"
 													aria-label="Fechar">
 													<span aria-hidden="true">&times;</span>
@@ -130,14 +134,17 @@ $personagens = $busca->getAllDataTable();
 											<div class="modal-body">
 
 												<form action="../adm/removePersonagem.php" method="post">
-													<div class="form-group">
-														<label for="id">ID:</label>
-														<input type="text" class="form-control" id="id" name="id">
+													<div class="form-group ">
+														<h3 id="labelValue"></h3>
+														<input type="hidden" class="form-control" id="idDelete"
+															name="idDelete">
+														<input type="hidden" class="form-control" id="nomeDelete"
+															name="nomeDelete">
 													</div>
 													<div class="modal-footer">
 														<button type="button" class="btn btn-secondary"
 															data-dismiss="modal">Fechar</button>
-														<button type="submit" class="btn btn-primary">Enviar</button>
+														<button type="submit" class="btn btn-danger">Deletar</button>
 													</div>
 												</form>
 											</div>
@@ -182,10 +189,6 @@ $personagens = $busca->getAllDataTable();
 							<div class="form-group">
 								<label for="descricao">Descrição:</label>
 								<textarea class="form-control" id="descricao" name="txtDesc"></textarea>
-							</div>
-							<div class="form-group">
-								<label for="duracao">Duração:</label>
-								<input type="text" class="form-control" id="duracao" name="txtDuracao">
 							</div>
 
 							<div class="modal-footer">

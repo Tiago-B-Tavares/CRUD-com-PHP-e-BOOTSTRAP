@@ -30,7 +30,7 @@ $con = new conexao();
 
   <header class=" navbar-expand-lg  container-fluid navbar-custom ">
 
-    <?php include("includes/menu.php") ?>
+    <?php include("includes/menu.php"); ?>
 
 
   </header>
